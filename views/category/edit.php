@@ -1,13 +1,18 @@
 <?php
 /** @var array $category */
+/** @var array $errors */
+/** @var array $model */
 ?>
 <h2>Редагування категорії</h2>
 <form action="" method="post" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="name" class="form-label">Назва категорії</label>
         <input type="text" class="form-control" id="name" name="name" placeholder="" value="<?= $category['name'] ?>">
+        <?php if (!empty($errors['name'])): ?>
+            <div class="form-text text-danger"> <?= $errors['name']; ?></div>
+        <?php endif; ?>
     </div>
-    <div class="col-3">
+    <div class="col-2">
         <?php $filePath = 'files/category/' . $category['photo']; ?>
         <?php if (is_file($filePath)) : ?>
             <img class="img-thumbnail card-img-top" src="/<?= $filePath ?>" alt="">
