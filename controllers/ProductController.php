@@ -12,7 +12,10 @@ class ProductController extends \core\Controller
     public function indexAction(){
         return $this->render();
     }
-    public function addAction(){
+    public function addAction($params){
+        $category_id = intval($params[0]);
+        if (empty($category_id))
+            $category_id = null;
         $categories = Category::getCategories();
         if (Core::getInstance()->requestMethod === 'POST'){
             $errors = [];
@@ -33,13 +36,14 @@ class ProductController extends \core\Controller
                 return $this->render(null, [
                     'errors' => $errors,
                     'model' => $model,
-                    'categories' => $categories
+                    'categories' => $categories,
+                    'category_id' => $category_id
                 ]);
             }
         }
-            return $this->render(null, [
-            'categories' => $categories
+        return $this->render(null, [
+            'categories' => $categories,
+            'category_id' => $category_id
         ]);
     }
-
 }

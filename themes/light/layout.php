@@ -53,9 +53,11 @@ else
 </svg>
 
     <header>
-        <div class="px-3 py-1 text-bg-dark">
+
+        <div class="px-3 py-1 text-bg-light">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <img src="/static/images/logo.jpg" alt="" width="100" height="40">
                     <a href="/"
                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
                         <!--<svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
@@ -66,10 +68,10 @@ else
 
                     <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
                         <li>
-                            <a href="/" class="nav-link text-secondary">
-                                <!--<svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                            <a href="/" class="nav-link text-secondary link">
+                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
                                     <use xlink:href="#home"/>
-                                </svg>-->
+                                </svg>
                                 Головна
                             </a>
                         </li>
@@ -86,15 +88,15 @@ else
                             </a>
                         </li> -->
                         <li>
-                            <a href="/category" class="nav-link text-white">
-                                <!--<svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                            <a href="/category" class="nav-link text-black link">
+                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
                                     <use xlink:href="#grid"/>
-                                </svg>-->
+                                </svg>
                                 Категорії
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link text-white">
+                            <a href="#" class="nav-link text-black link">
                                 <svg class="bi d-block mx-auto mb-1" width="24" height="24">
                                     <use xlink:href="#grid"/>
                                 </svg>
