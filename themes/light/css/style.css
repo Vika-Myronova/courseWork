@@ -1,0 +1,20 @@
+.form-signin {
+    max-width: 350px;
+}
+.error {
+    color: red;
+}
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+.categories-list .card {
+    transition-duration: 0.5s;
+}
+.categories-list a {
+    text-decoration: none;
+}
+.categories-list .card:hover {
+    background-color: antiquewhite;
+    transform: scale(1.1);
+}
